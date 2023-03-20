@@ -1,0 +1,35 @@
+
+        <h2>Polecane produkty</h2>
+        <div class="mall-products__products">
+        {% for featuredProduct in featuredProducts %}
+                    <div class="mall-products-item">
+            <a href="http://puchary24.test/product/palmer-pugh" data-mall-item-id="product-7">
+                <div class="mall-products-item__image">
+                    <img src="" alt="Palmer Pugh">        </div>
+                <div class="mall-products-item__info">
+                    <div class="mall-products-item__info-primary">
+                    
+                        <div class="mall-products-item__name">
+                            {{ featuredProduct.name}}
+                        </div>
+                        
+                        <div class="mall-products-item__price
+                            ">
+                            {{ featuredProduct.price["USD"] }}
+                        </div>
+                    </div>
+                    <div class="mall-products-item__info-secondary">
+                        <div class="mall-products-item__short-description">
+                            
+                        </div>
+                        <div class="mall-products-item__old-price">
+                                                    
+                                            </div>
+                    </div>
+                    <div class="mall-products-item__info-teritary">
+                                                                                    </div>
+                </div>
+            </a>
+        </div>  
+        {% endfor %}          
+        </div>
